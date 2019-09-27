@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.game {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.small-board {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-wrap: wrap;
+
+  border: 1px solid black;
+
+  opacity: 0.2;
+}
+
+.small-board.current {
+  opacity: 1;
+}
+
+.small-board div {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+}
